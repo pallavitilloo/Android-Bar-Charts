@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ratio and Bar Charts</string>
+    <string name="lblAppTitle">Ratio and Bar Charts</string>
+    <string name="lblTotal">Total number of students</string>
+    <string name="lblA">A students</string>
+    <string name="lblB">B students</string>
+    <string name="lblC">C students</string>
+    <string name="lblD">D students</string>
+    <string name="lblE">E students</string>
+    <string name="lblButton">Compute</string>
+    <string name="btnPlot">Plot Bar Charts</string>
+    <string name="dialog_title">Grade Distribution</string>
+    <string name="lblPopUpMsg">The percentages of grade distribution are:</string>
+    <string name="bclblA">A%</string>
+    <string name="bclblB">B%</string>
+    <string name="bclblC">C%</string>
+    <string name="bclblD">D%</string>
+    <string name="bclblE">E%</string>
+</resources>

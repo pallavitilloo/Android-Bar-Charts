@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/orange_100">
+
+<!--        TextView to show App Title-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id="@+id/tvAppTitle"
+            android:text="@string/lblAppTitle"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:background="@color/teal_900"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+<!--        Label for Total number of students-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotal"
+            android:textColor="#000"
+            android:paddingTop="20dp"
+            android:text="@string/lblTotal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etTotal"
+             />
+
+<!--        EditText for total number of students-->
+
+            <EditText
+                android:id="@+id/etTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@id/tvA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTotal" />
+
+        <!--        TextView for Grade A students-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvA"
+                android:textColor="#000"
+                android:text="@string/lblA"
+                app:layout_constraintTop_toBottomOf="@id/etTotal"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/etA"/>
+
+<!--        EditText for grade A students-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etA"
+            app:layout_constraintTop_toBottomOf="@id/tvA"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvB"
+            android:inputType="number"/>
+
+        <!--        TextView for Grade B students-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvB"
+            android:textColor="#000"
+            android:text="@string/lblB"
+            app:layout_constraintTop_toBottomOf="@id/etA"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etB" />
+
+        <!--        EditText for grade B students-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etB"
+            app:layout_constraintTop_toBottomOf="@id/tvB"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvC"
+            android:inputType="number"/>
+
+
+        <!--        TextView for Grade C students-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvC"
+            android:textColor="#000"
+            android:text="@string/lblC"
+            app:layout_constraintTop_toBottomOf="@id/etB"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etC" />
+
+        <!--        EditText for grade C students-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etC"
+            app:layout_constraintTop_toBottomOf="@id/tvC"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvD"
+                android:inputType="number"/>
+
+        <!--        TextView for Grade D students-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvD"
+            android:textColor="#000"
+            android:text="@string/lblD"
+            app:layout_constraintTop_toBottomOf="@id/etC"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etD" />
+
+        <!--        EditText for grade D students-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etD"
+            app:layout_constraintTop_toBottomOf="@id/tvD"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvE"
+            android:inputType="number"/>
+
+        <!--        TextView for Grade E students-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvE"
+            android:textColor="#000"
+            android:text="@string/lblE"
+            app:layout_constraintTop_toBottomOf="@id/etD"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etE"/>
+
+        <!--        EditText for grade E students-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etE"
+            app:layout_constraintTop_toBottomOf="@id/tvE"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnCompute"
+            android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblButton"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etE"
+            android:backgroundTint="@color/teal_900"
+            android:textColor="@color/white"
+            android:onClick="Compute"/>
+
+</LinearLayout>
+</ScrollView>
